@@ -1,17 +1,29 @@
-import React from 'react'
+import React from "react";
 
-const Preguntas = () => {
+const Preguntas = ({ pokemones, setPokemones }) => {
+
+  const respuestaPokemon = (id) => {
+    const idPokemonCorrecto = pokemones.data[pokemones.id_pokemon].data.id
+    
+    if(id == idPokemonCorrecto) {
+      // setPokemones( (state) => Object.assign(state, { pokemon_correcto: true }) )
+      setPokemones({...pokemones, pokemon_correcto: true })
+      // alert("Respuesta correcta")
+    }else {
+      // alert("Respuesta incorrecta")
+    }
+  }
+
   return (
-    <>
+    <div className="Preguntas">
       <h1>Que pokemon es?</h1>
       <div className="preguntas">
-        <button>Pregunta 1</button>
-        <button>Pregunta 2</button>
-        <button>Pregunta 3</button>
-        <button>Pregunta 4</button>
+        {pokemones.data.map((pokemon) => (
+          <button onClick={() => respuestaPokemon(pokemon.data.id)} key={pokemon.data.id}>{pokemon.data.name}</button>
+        ))}
       </div>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default Preguntas
+export default Preguntas;
