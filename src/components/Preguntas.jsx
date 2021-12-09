@@ -8,7 +8,7 @@ const Preguntas = ({ pokemones, setPokemones }) => {
     if(id == idPokemonCorrecto) {
       // setPokemones( (state) => Object.assign(state, { pokemon_correcto: true }) )
       setPokemones({...pokemones, pokemon_correcto: true })
-      // alert("Respuesta correcta")
+      alert("Respuesta correcta!!!")
     }else {
       // alert("Respuesta incorrecta")
     }
