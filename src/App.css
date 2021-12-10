@@ -1,22 +1,87 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Bangers:regular);
+@import url(https://fonts.googleapis.com/css?family=Bungee:regular);
+@import url(https://fonts.googleapis.com/css?family=Carter+One:regular);
 * {
-  font-family: Poppins;
+  font-family: 'Bangers';
 }
+img {
+  width: 100%;
+}
+:root {
+  --bg-dark: #192229;
+  --cl-texto-dark: #fbfdfe;
+  --bg-button-dark: #0f80d2;
+}
+
 .App {
-  padding: 200px;
+  background: rgb(245, 245, 245); 
+  display: flex;
+  color: #131313;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  transition: 1s;
+}
+.Dark {
+  transition: 1s;
+  background: var(--bg-dark);
+  color: var(--cl-texto-dark);
+}
+.Container {
+  width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
+h1 {
+  text-align: center;
+  font-weight: 300;
+}
+
 button {
-  background: #131313;
+  background: var(--bg-button-dark);
+  border-radius: 5px;
   border: none;
   color: white;
   width: 100%;
   padding: 10px 0;
   margin-bottom: 10px;
+  transition: .1s;
+  font-weight: 300;
+  font-family: 'Bungee';
+  display: block;
+  width: 100%;
 }
 button:hover {
-  background: yellow;
   cursor: pointer;
+  background: #0f80d2;
+}
+button:active {
+  transform: scale(0.94);
+  cursor: pointer;
+}
+.Preguntas {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.Pokemon {
+  width: 100%;
+}
+.Container__Preguntas {
+  width: 100%;
+}
+
+@media  (max-width: 480px) {
+
+  .Container {
+
+    grid-template-columns: 1fr;
+  }
+  
 }
