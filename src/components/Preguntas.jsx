@@ -1,11 +1,19 @@
 import React from "react";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
 
 const Preguntas = ({ pokemones, setPokemones }) => {
+  const MySwal = withReactContent(Swal)
   const respuestaPokemon = (id) => {
     const idPokemonCorrecto = pokemones.data[pokemones.id_pokemon].data.id;
 
     if (id == idPokemonCorrecto) {
-      // setPokemones( (state) => Object.assign(state, { pokemon_correcto: true }) )
+      MySwal.fire(
+        'GOOD JOB!',
+        'Adivinaste el POKEMON!',
+        'success'
+      )
       setPokemones({ ...pokemones, pokemon_correcto: true });
       // alert("Respuesta correcta!!!")
     } else {
