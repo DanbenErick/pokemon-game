@@ -1,3 +1,7 @@
+.Pokemon {
+  display: flex;
+  justify-content: center;
+}
 .Pokemon img {
   width: 100%;
 }

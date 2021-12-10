@@ -9042,7 +9042,7 @@ react-is@^17.0.1:
 
 react-loader-spinner@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/react-loader-spinner/-/react-loader-spinner-4.0.0.tgz#43d9e71b0574219f64216933c28ef5faa12262f6"
+  resolved "https://registry.npmjs.org/react-loader-spinner/-/react-loader-spinner-4.0.0.tgz"
   integrity sha512-RU2vpEej6G4ECei0h3q6bgLU10of9Lw5O+4AwF/mtkrX5oY20Sh/AxoPJ7etbrs/7Q3u4jN5qwCwGLRKCHpk6g==
   dependencies:
     prop-types "^15.7.2"
@@ -10364,6 +10364,16 @@ svgo@^1.0.0, svgo@^1.2.2:
     stable "^0.1.8"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
+
+sweetalert2-react-content@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/sweetalert2-react-content/-/sweetalert2-react-content-4.2.0.tgz#ab4a6e02e37150dd0ea34d00179ec76952e3f442"
+  integrity sha512-eB324swnq10UJH8nAH2S6GHuAKDgH6GpGU8vI+ulYdmlPzpb0T5QPc7O4RFNRx28GzVZUnfvtpxZbKtZ5/KOnQ==
+
+sweetalert2@^11.3.0:
+  version "11.3.0"
+  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.3.0.tgz#39be4b23a02be479f36441f3a5f16a5d6364aba3"
+  integrity sha512-C0TFp0VLxgx+PmhJ0mL8qzx+iYjnCLdDbvQHKY6KAGI+xwawMvLkStPgw2LmJl6itaDhR/qLQStPFIbr1VK9Ow==
 
 symbol-tree@^3.2.4:
   version "3.2.4"
