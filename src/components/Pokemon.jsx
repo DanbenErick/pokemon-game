@@ -8,8 +8,6 @@ const Pokemon = ({ pokemones, setPokemones }) => {
   const { error, loading, pokemons, idSuccessPokemon } = usePokemon()
   const [imagePokemon, setImagePokemon] = useState('')
 
-  
-
   useEffect(() => {
     if(!error && !loading && idSuccessPokemon != null && pokemons.length > 0 )  {
       setImagePokemon(`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemons[idSuccessPokemon].data.id}.png`)
@@ -18,7 +16,6 @@ const Pokemon = ({ pokemones, setPokemones }) => {
     }
   }, [idSuccessPokemon, pokemons, error, loading])
 
-  
   return (
     <div className="Pokemon">
     {

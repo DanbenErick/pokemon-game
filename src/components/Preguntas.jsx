@@ -9,10 +9,14 @@ const Preguntas = ({ pokemones, setPokemones }) => {
     const idPokemonCorrecto = pokemones.data[pokemones.id_pokemon].data.id;
 
     if (id == idPokemonCorrecto) {
-      MySwal.fire(
-        'GOOD JOB!',
-        'Adivinaste el POKEMON!',
-        'success'
+      MySwal.fire({
+          title: 'ADIVINASTE!',
+          icon: 'success',
+          confirmButtonText: "Reinicar Videojuego",
+          preConfirm: () => {
+            window.location = './'
+          }
+        }
       )
       setPokemones({ ...pokemones, pokemon_correcto: true });
       // alert("Respuesta correcta!!!")

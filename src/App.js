@@ -13,9 +13,9 @@ const App = () => {
     id_pokemon: null,
     pokemon_correcto: false,
     modeDark: false,
+    otra_vez: false
   });
   return (
-    
     <div className={`App ${pokemones.modeDark ? 'Dark' : ''}`}>
       <div className="Container">
         <ModeDark pokemones={ pokemones }  setPokemones= { setPokemones } />
